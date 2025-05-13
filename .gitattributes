@@ -1,0 +1,3 @@
+# Normalize final de linha para LF em todos os arquivos de texto
+* text=auto eol=lf
+

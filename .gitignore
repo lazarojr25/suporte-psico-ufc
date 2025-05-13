@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+
+# Configurações locais (não versionar)
+postcss.config.js
+tailwind.config.js
+
+# Código compilado / pasta de saída
+dist/
+.vite/
+
+# Entradas de build ou arquivos gerados
+src/
+
+# Arquivos de ambiente
+.env
