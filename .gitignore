@@ -9,8 +9,5 @@ tailwind.config.js
 dist/
 .vite/
 
-# Entradas de build ou arquivos gerados
-src/
-
 # Arquivos de ambiente
 .env
