@@ -46,7 +46,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-md p-6 w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-4">Solicitar Acompanhamento Psicológico</h2>
+        <h2 className="text-2xl font-bold mb-4">Solicitar Acompanhamento Psicológico - UFC</h2>
 
         {error && <p className="text-red-500 mb-2">{error}</p>}
 
