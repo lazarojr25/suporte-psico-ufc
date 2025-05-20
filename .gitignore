@@ -1,5 +1,6 @@
 # Dependências
 node_modules/
+backend/
 
 # Configurações locais (não versionar)
 postcss.config.js
