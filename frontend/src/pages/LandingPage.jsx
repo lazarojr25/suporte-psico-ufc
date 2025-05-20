@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 // Firebase
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../services/firebase';
 import { auth } from '../services/firebase';
 
+// hooks
+import { useAnonymousAuth } from '../hooks/useAnonymousAuth';
+
 export default function LandingPage() {
+
+  useAnonymousAuth();// função do hook que faz o login anônimo
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [studentId, setStudentId] = useState('');
