@@ -8,11 +8,11 @@ import { db } from '../services/firebase';
 import { auth } from '../services/firebase';
 
 // hooks
-import { useAnonymousAuth } from '../hooks/useAnonymousAuth';
+import { loginAnonymously } from '../hooks/useAnonymousAuth';
 
-export default function LandingPage() {
+export default function Solicitacao() {
 
-  useAnonymousAuth();// função do hook que faz o login anônimo
+  loginAnonymously();// função do hook que faz o login anônimo
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -41,7 +41,7 @@ export default function LandingPage() {
         createdAt: serverTimestamp(),
         requestedBy: auth.currentUser?.uid || null,
       });
-      navigate('/obrigado');
+      navigate('/obrigado'); // Redireciona para a página de confirmação
     } catch (err) {
       console.error(err);
       setError('Erro ao enviar solicitação. Tente novamente.');
